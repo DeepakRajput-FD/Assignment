@@ -61,7 +61,7 @@
     <p><b>Security vulnerabilities:</b> CSS can be vulnerable to security attacks, such as cross-site scripting (XSS). This is because CSS code can be used to inject malicious JavaScript code into a web page.</p>
    
     <h3>
-        What is the difference between CSS2 and CSS3?
+        Q3. What is the difference between CSS2 and CSS3?
     </h3>
     <table>
         <tr>
@@ -106,7 +106,7 @@
     </table>
 
         <h3>
-            Name a few CSS style components
+            Q4. Name a few CSS style components
         </h3>
 
         <p>
@@ -114,7 +114,7 @@
         </p>
 
         <h3>
-            What do you understand by CSS opacity?
+            Q5.  What do you understand by CSS opacity?
         </h3>
 
         <p>
@@ -129,7 +129,7 @@
         </p>
 
         <h3>
-            How can the background color of an element be changed?
+            Q6.  How can the background color of an element be changed?
         </h3>
 
         <p>
@@ -147,7 +147,216 @@
         </p>
 
         <h3>
-            How can image repetition of the backup be controlled?   
+            Q7. How can image repetition of the backup be controlled?   
         </h3>
+
+        <p>
+            To control image repetition of the backup you can use the background-repeat property in css.
+            <br>
+            This property can be used to specify whether and how an image should be repeated when it is used as a background image.
+            <br>
+            background-repeat
+            properties:
+            <br>
+            repeat-x
+            <br>
+            repeat-y
+            <br>
+            repeat
+            <br>
+            no-repeat
+        </p>
+
+        <h3>
+            Q8.  What is the use of the background-position property?
+        </h3>
+
+        <p>
+            background-position property is used to change the background-position of an background image vertically and horizontally.
+            <br>
+            there are some properties
+            <br>
+            1.top,2.left,3.right,4.bottom
+            <br>
+            and you can set the background-position using unit converter like pixel,percentage,
+        </p>
+
+        <h3>
+           Q9. Which property controls the image scroll in the background?
+        </h3>
+
+        <p>
+            background attachment property controls the image scroll in the background.
+            using there some properties 
+            <br>
+            1.fixed means it is fixed on place it is not changed the position, the background image is fixed and the element can be scrolled.
+            <br>
+            2.Scroll means background image scrolls with the page.
+            <br>
+            3.Local means background image scroll with an element. 
+        </p>
+
+        <h3>
+            Q10. Why should background and color be used as separate properties?
+        </h3>
+
+        <p>
+            1. Legibility
+            <br>
+            The background property is a complex property that controls the background of an element, including the background color, background image, and background position. If the color property was combined with the background property, it would make the background property even more complex and difficult to read and understand.
+            <br>
+            2. Inheritance
+            <br>
+            The color property is inherited by child elements, while the background property is not. This means that if the color property was combined with the background property, it would be difficult to control the color of child elements independently of the background color of their parent elements.
+        </p>
+
+        <h3>
+           Q11. How to center block elements using CSS1?
+        </h3>
+
+        <p>
+            There are two ways to center a block elements using CSS1.
+            <br>
+            1.Margin property you want to set as Margin-left:auto; ,Margin-right:auto;
+            <br>
+            2.center 
+            <br>
+            center tag is used to center an block element used in css1.
+            <br>
+            but it is deprecated.
+        </p>
+
+        <h3>
+           Q12. How to maintain the CSS specifications?
+        </h3>
+
+        <p>
+            Maintaining the CSS specifications is a complex and ongoing process that involves a number of different stakeholders, including:
+
+        <b>The CSS Working Group (CSSWG):</b> This group of experts is responsible for developing and maintaining the CSS specifications.
+        <br>
+        <b>Browser vendors:</b> Browser vendors need to implement the CSS specifications in order for websites to look and behave as expected.
+        <br>
+        <b>Web developers:</b> Web developers need to be aware of the CSS specifications in order to write CSS code that is valid and compatible across different browsers.            
+        </p>
+
+        <h3>
+          Q13.  What are the ways to integrate CSS as a web page?
+        </h3>
+
+        <p>
+            There are three ways to integrate CSS as a web page:
+
+            <b>Inline CSS:</b> Inline CSS is the simplest way to add CSS to a web page. To use inline CSS, simply add the style attribute to an HTML element and set the value of the style attribute to the desired CSS properties.
+            <br>
+            <b>Internal CSS:</b> Internal CSS is another way to add CSS to a web page. To use internal CSS, create a (style) element in the head section of your HTML document and add your CSS code to the style element. 
+            <br>
+            <b>External CSS:</b> External CSS is the preferred way to add CSS to a web page. To use external CSS, create a CSS file with the .css extension and add your CSS code to the CSS file. Then, in the (head) section of your HTML document, add a (link) element to the CSS file. 
+        </p>
+
+        <h3>
+          Q14.  What is embedded style sheets?
+        </h3>
+
+        <p>
+            embedded style sheets also known as internal css.
+            <br>
+            An embedded style sheet is a CSS style sheet that is embedded within an HTML document. It is defined using the (style) element in the (head) section of the HTML document.
+                <br>
+                Embedded style sheets are useful for styling a single HTML document or for applying unique styles to a specific subset of elements within a document. They are also useful for overriding styles that are defined in external CSS style sheets.
+        </p>
+
+        <h3>
+           Q15. What are the external style sheets?
+        </h3>
+
+        <p>
+            External style sheets are CSS style sheets that are saved as separate files with the .css extension. They are linked to HTML documents using the (link) element in the head section of the document.
+            <br>
+            External style sheets are the preferred way to add CSS to a web page because they offer a number of advantages over inline and embedded style sheets:
+        </p>
+        
+        <h3>
+            Q16. What are the advantages and disadvantages of using external style sheets?
+        </h3>
+
+        <p>
+            Advantages of using external style sheets:
+
+           <b>Efficiency:</b> External style sheets are only parsed once by the browser, regardless of how many HTML pages they are linked to. This can significantly improve page loading times.
+           <br>
+           <b>Maintainability:</b> External style sheets are easier to maintain than inline and embedded style sheets because changes to the CSS file are automatically reflected in all of the HTML pages that link to it.
+           <br>
+            <b>Consistency:</b> External style sheets can help to ensure that all of the pages on a website have a consistent style. This is because the CSS file can be used to define a single set of styles that can be applied to all of the pages on the website.
+            <br>
+            <b>Reusability:</b> External style sheets can be reused across multiple websites, which can save time and effort.
+            <br>
+            <br>
+            Disadvantages of using external style sheets:
+
+            <b>Complexity:</b> External style sheets can add complexity to a website, especially if there are a large number of CSS files.
+            <br>
+            <b>Load time:</b> External style sheets can add to the initial load time of a website, as the browser needs to download the CSS files before it can render the page.
+            <br>
+            <b>Debugging:</b> External style sheets can be more difficult to debug than inline and embedded style sheets, as it can be difficult to track down the source of a styling issue.
+        </p>
+
+        <h3>
+            Q17. What is the meaning of the CSS selector?
+        </h3>
+
+        <p>
+            CSS selectors are used to select the HTML elements that you want to style.
+            <br>
+        <b>Simple selectors:</b> Simple selectors match HTML elements based on their tag name, class name, or ID.
+        <br>
+        <b>Combinator selectors:</b> Combinator selectors match HTML elements based on their relationship to other HTML elements.
+        <br>
+        <b>Pseudo-class selectors:</b> Pseudo-class selectors match HTML elements based on their state, such as being hovered over or focused.
+        <br>
+        <b>Pseudo-element selectors:</b> Pseudo-element selectors match parts of HTML elements, such as the first letter of a paragraph or the link state of an anchor element.
+        <br>
+        <b>Attribute selectors:</b> Attribute selectors match HTML elements based on their attributes.
+        </p>
+
+        <h3>
+         Q18. What are the media types allowed by CSS?
+        </h3>
+
+        <p>
+        <b>all:</b> This is the default media type and applies to all devices and environments.
+        <br>
+        <b>aural:</b> This media type applies to devices that produce audio output, such as screen readers and speech synthesizers.
+        <br>
+        <b>braille:</b> This media type applies to devices that produce braille output, such as braille embossers.
+            <br>
+        <b>handheld:</b> This media type applies to handheld devices, such as smartphones and tablets.
+            <br>
+        <b>print:</b> This media type applies to printed documents.
+            <br>
+        <b>projection:</b> This media type applies to projected presentations, such as those displayed on screens or projectors.
+            <br>
+        <b>screen:</b> This media type applies to devices with screens, such as computers and smartphones.
+            <br>
+        <b>tty:</b> This media type applies to devices with teletype (TTY) interfaces.
+            <br>
+        <b>tv:</b> This media type applies to television devices.
+        </p>
+
+        <h3>
+          Q19.  What is the rule set?
+        </h3>
+
+        <p>
+            A CSS rule set is a collection of CSS declarations that are applied to a specific HTML element or group of elements.
+            <br>
+             A CSS rule set consists of two parts: a selector and a declaration block.
+             <br>
+             The selector is a pattern that matches HTML elements.
+             <br>
+              The declaration block is a list of CSS properties and their values. The CSS properties are used to style the HTML elements that are matched by the selector.
+              <br>
+              CSS rule sets can also be used to create responsive websites. Responsive websites are websites that look good and function on all devices, regardless of the screen size or orientation.
+        </p>
 </body>
 </html>
