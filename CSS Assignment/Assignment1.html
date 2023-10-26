@@ -15,6 +15,24 @@
             padding: 0px 10px;
             font-size: 18px;
         }
+
+        table
+        {
+            border: 3px solid black;
+            border-collapse: separate;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: gold;
+        }
+        tr:nth-child(even)
+        {
+            background-color: teal;
+        }
+        td,th
+        {
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -37,8 +55,99 @@
      CSS can be tricky to get working consistently across all browsers. This is because different browsers interpret CSS code in different ways. As a result, you may need to test your website on multiple browsers to make sure that it looks and functions as expected.</p>
 
     <p><b>Complexity:</b> CSS can be complex to learn, especially for beginners. There are many different CSS properties and selectors, and it can take time to master how to use them effectively.</p>
+
     <p><b>Performance issues:</b> CSS can sometimes lead to performance issues, especially if you are using a lot of complex CSS code. This is because the browser has to parse and apply all of the CSS code before it can render the page.</p>
+
     <p><b>Security vulnerabilities:</b> CSS can be vulnerable to security attacks, such as cross-site scripting (XSS). This is because CSS code can be used to inject malicious JavaScript code into a web page.</p>
-   </p>
+   
+    <h3>
+        What is the difference between CSS2 and CSS3?
+    </h3>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>CSS2</th>
+            <th>CSS2</th>
+        </tr>
+        
+        <tr>
+            <td>Modularization</td>
+            <td>
+                CSS2 is a single document that defines all of the CSS features.
+            </td>
+            <td>CSS3 is split into a number of modules, each of which defines a specific set of features. This makes CSS3 easier to learn and use, and it also allows new features to be added more easily.</td>
+        </tr>
+
+        <tr>
+            <td>Selectors</td>
+            <td>CSS2 has a limited set of selectors, which are used to identify the elements on a web page that should be styled.</td>
+            <td>CSS3 introduces a number of new selectors, including pseudo-elements and pseudo-classes. This gives developers more flexibility when styling web pages.</td>
+        </tr>
+
+        <tr>
+            <td>Properties</td>
+            <td>
+                CSS2 has a limited set of properties, which are used to control the appearance of elements on a web page.
+            </td>
+            <td>
+                CSS3 introduces a number of new properties, including properties for borders, shadows, transitions, and animations. This gives developers more control over the appearance and behavior of web pages. 
+            </td>
+        </tr>
+
+        <tr>
+            <td>Media queries</td>
+            <td>
+                CSS2 has limited support for media queries, which can be used to adjust the styling of a web page based on the device or environment in which it is being viewed.
+            </td>
+            <td>
+                CSS3 has improved support for media queries, making it easier to create responsive web pages that look good on all devices.
+            </td>
+        </tr>
+    </table>
+
+        <h3>
+            Name a few CSS style components
+        </h3>
+
+        <p>
+            Button , input ,label , textarea ,checkbox ,table , radio button ,list item ,paragraph ,heading , menu, navbar
+        </p>
+
+        <h3>
+            What do you understand by CSS opacity?
+        </h3>
+
+        <p>
+            css opacity is a property that controls the transparancy of an element.
+            <br>
+            there are only two number 1 and 0.
+            <br>
+            0 means that is transparent.
+            1 means fully visible.
+            <br>
+            opacity can be used to background , image, text and etc.
+        </p>
+
+        <h3>
+            How can the background color of an element be changed?
+        </h3>
+
+        <p>
+            You can changed the background-color of an element using (background-color) property.
+            or if you want to use multiple color then you can use gradients.
+            <br>
+            Syntax :
+
+            element
+            {
+                background-color:"Green";
+            }
+            <br>
+            1.linear Gradients ,2.Radial Gradients ,3.Conic Gradients.
+        </p>
+
+        <h3>
+            How can image repetition of the backup be controlled?   
+        </h3>
 </body>
 </html>
