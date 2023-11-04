@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service</title>
+    <style>
+        *
+        {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .maincontainer
+        {
+            width: 100%;
+            display: flex;
+            background-color: #202020;
+            font-family: sans-serif;
+            padding-bottom: 40px;
+        }
+        .col-50
+        {
+            text-align: right;
+            width: 50%;
+            position: relative;
+        }
+        .row-50
+        {
+           width: 50%;
+        }
+        .row-50 img
+        {
+            width: 100%;
+        }
+        h2
+        {
+            border-right:5px solid red ;
+            color: #f4f5f9;
+            font-size: 36px;
+            font-weight: 700;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            margin: 100px 40px 50px 0px;
+            padding-right: 10px;
+        }
+
+        .main-text
+        {
+            padding-top: 50px;
+            padding-right: 40px;
+        }
+
+        .main-text #p1
+        {
+            font-size: 18px;
+            color: #e74c3c;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 35px 10px 0px;
+        }
+        .main-text #p2
+        {
+            font-size: 14px;
+            color: #999999;
+            font-weight: 400;
+            padding: 0px 35px 30px 100px;
+        }
+        .navicon
+        {
+            position: absolute;
+            bottom: 280px;
+            left: 0;
+        }
+
+        #desktopimg
+        {
+            position: absolute;
+            top: 250px;
+            left: 730px;
+        }
+        #print
+        {
+            position: absolute;
+            top: 360px;
+            left: 730px;
+        }
+        #camera
+        {
+            position: absolute;
+            bottom: 140px;
+            left: 730px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header1">
+        <div class="maincontainer">
+            
+            <div class="col-50">
+                <div class="main-text">
+                    <h2>our services</h2>
+
+                    <div class="card">
+                    <p id="p1">
+                        web design
+                    </p>
+
+                    <p id="p2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+                    </p>
+                    </div>
+
+                    <div class="card">
+                    <p id="p1">
+                        print design
+                    </p>
+
+                    <p id="p2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+                    </p>
+                    </div>
+
+                    <div class="card">
+                    <p id="p1">
+                        photography
+                    </p>
+
+                    <p id="p2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+                    </p>
+                    </div>
+                    </div>
+
+                     <div class="navicon">
+                    <img src="./images/Nav Bar.png" alt="">
+                </div>
+
+                <div class="images">
+                    <img src="./images/desktopimg.png" alt="" id="desktopimg">
+                    <img src="./images/print.png" alt="" id="print">
+                    <img src="./images/camera.png" alt="" id="camera">
+                </div>
+            </div>
+
+
+            <div class="row-50">
+                <img src="./images/Put Your Image.png" alt="">
+            </div>
+
+        </div>
+    </header>
+</body>
+</html>
