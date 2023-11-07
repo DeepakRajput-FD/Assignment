@@ -1,0 +1,136 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:769px) { 
+  
+
+    #header1
+    {
+        background-color: aqua;
+        width: 100%;
+    }
+
+
+    nav
+    {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu
+    {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .menu li
+    {
+        padding: 5px;
+        text-align: center;
+    }
+
+    #check1
+    {
+        width: 50px;
+        height: 50px;
+        display: block;
+        right: 0;
+    }
+    
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text
+    {
+        padding: 0;
+    }
+
+    .text-container
+    {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    h1 , #p2
+    {
+        padding: 20px 0px;
+    }
+    
+    .control2
+    {
+        padding: 10px 0px;
+    }
+    
+     #input2
+    {
+        margin-bottom: 10px;
+    }       
+
+     .control3
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .main-image img
+    {
+        width: 100%;
+        height: 100%;    
+    }
+
+    .company-img img
+    {
+        width: 56px;
+    }
+
+    .page1menu
+    {
+        visibility: hidden;
+        flex-direction: column;
+    }    
+
+    input:checked + .page1menu
+    {
+        visibility: visible;
+    }
+
+    #header2
+    {
+        background-color: red;
+        width: 100%;
+    }
+
+
+    .container2
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 80%;
+        padding: 0px;
+    }
+
+    .textcontainer2
+    {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+
+    .container2 .image2
+    {
+        padding: 20px 0px;
+        width: 100%;
+        height: 100%;    
+    }
+
+    .image2 img
+    {
+        width: 100%;
+        height: 100%;  
+        /* text-align: center;   */
+    }
+
+ }
