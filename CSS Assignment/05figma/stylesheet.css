@@ -17,6 +17,8 @@ nav
     justify-content: space-evenly; 
     padding: 20px;
     align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 .control
 {
@@ -24,15 +26,14 @@ nav
     gap: 20px;
     font-size: 16px;
     align-items: center;
+    padding: 0px 40px;
 }
 
 #b1
 {
     font-weight: 500;
-    /* font-size: 16px; */
     color: #794CFF;
     padding: 15px 20px;
-    /* height: 40px; */
     background: #ECE6FF;
     border-radius: 4px;
     border: 0px;
@@ -52,11 +53,17 @@ nav
     position: absolute;
 }
 
+#bars
+{
+    display: none;
+}
+
 
 .menu
 {
     display: flex;
     list-style-type: none;
+    padding: 20px;
 }
  a
 {
@@ -71,6 +78,7 @@ nav
 .page1menu
 {
     display: flex;
+    align-items: center;
 }
 
 .text-container
@@ -111,7 +119,7 @@ border: 0px;
 
 .text
 {
-    padding: 0px 100px;
+    padding: 0px 50px;
 }
 
 h1
@@ -130,6 +138,8 @@ h1
 .control3
 {
     display: flex;
+    justify-content: center;
+    /* text-align: center; */
 }
 
 #input2
@@ -321,7 +331,7 @@ font-size: 16px;
 color: #4E5A65;
 }
 
-.textwrapper4 button
+.textwrapper4 #b5
 {
 text-transform: capitalize;
 margin-top: 20px;
@@ -446,7 +456,7 @@ display: flex;
 justify-content: space-around;
 }
 
-div [class*="menu"]
+.menu1 , .menu2 , .menu3
 {
 font-weight: 600;
 font-size: 16px;
