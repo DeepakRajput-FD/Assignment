@@ -33,6 +33,33 @@
         {
             padding: 20px;
         }
+
+        #gradients
+        {
+            background: linear-gradient(30deg, red, green, blue);
+        }
+
+        #repeats
+        {
+            /* width: 250px; */
+            /* height: 400px; */
+            background-image: url(./images/elephant.jpg) ;
+            background-repeat: repeat-x;
+            padding: 20px;
+            color: whitesmoke;
+        }
+
+        #position
+        {
+            background: url(./images/background_position.jpg)no-repeat;
+            background-position: right;
+        }
+
+        #attachment
+        {
+            background: url(./images/background-attachment.jpg) no-repeat center/cover;
+            background-attachment: fixed;
+        }
     </style>
 </head>
 <body>
@@ -110,14 +137,16 @@
         </h3>
 
         <p>
-            Button , input ,label , textarea ,checkbox ,table , radio button ,list item ,paragraph ,heading , menu, navbar
+            Button , input ,label , textarea ,checkbox ,table , radio button ,list item ,paragraph ,heading , menu, navbar.
+            <button style="background-color: red;">hello</button>
+                
         </p>
 
         <h3>
             Q5.  What do you understand by CSS opacity?
         </h3>
 
-        <p>
+        <p style="opacity: 0.3; color: teal;">
             css opacity is a property that controls the transparancy of an element.
             <br>
             there are only two number 1 and 0.
@@ -132,7 +161,7 @@
             Q6.  How can the background color of an element be changed?
         </h3>
 
-        <p>
+        <p id="gradients">
             You can changed the background-color of an element using (background-color) property.
             or if you want to use multiple color then you can use gradients.
             <br>
@@ -150,7 +179,7 @@
             Q7. How can image repetition of the backup be controlled?   
         </h3>
 
-        <p>
+        <p id="repeats">
             To control image repetition of the backup you can use the background-repeat property in css.
             <br>
             This property can be used to specify whether and how an image should be repeated when it is used as a background image.
@@ -158,6 +187,7 @@
             background-repeat
             properties:
             <br>
+            
             repeat-x
             <br>
             repeat-y
@@ -171,7 +201,7 @@
             Q8.  What is the use of the background-position property?
         </h3>
 
-        <p>
+        <p id="position">
             background-position property is used to change the background-position of an background image vertically and horizontally.
             <br>
             there are some properties
@@ -185,7 +215,7 @@
            Q9. Which property controls the image scroll in the background?
         </h3>
 
-        <p>
+        <p id="attachment">
             background attachment property controls the image scroll in the background.
             using there some properties 
             <br>
