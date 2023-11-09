@@ -61,6 +61,7 @@
             padding-top: 50px;
             color: white ;
             text-align: center;
+            position: relative;
         }
 
         #p1
@@ -155,7 +156,8 @@
             text-transform: uppercase;
             color: black;
             font-weight: 600;
-            font-family: "Open Sans";
+            /* font-family: "Open Sans"; */
+            font-family: sans-serif;
             /* text-align: center; */
         }
 
@@ -184,6 +186,23 @@
         .line img
         {
             padding: 0px;
+        }
+
+        .arrow #rightarrow,#leftarrow
+        {
+            position: absolute;
+        }
+
+        #rightarrow
+        {
+            top: 150px;
+            right: -110px;
+        }
+
+        #leftarrow
+        {
+            top: 150px;
+            left: -110px;
         }
 
     </style>
@@ -232,6 +251,11 @@
                             learn more
                         </button>
                         </div>
+                 </div>
+
+                 <div class="arrow">
+                    <img src="..//images/Rounded Rectangle 3.png" alt="" id="rightarrow">
+                    <img src="..//images/Rounded Rectangle 3 (1).png" alt="" id="leftarrow">
                  </div>
             </div>
         </div>
