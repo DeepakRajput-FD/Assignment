@@ -8,12 +8,14 @@
         h3
         {
             color: red;
+            font-family: sans-serif;
         }
         p
         {
             color: blue;
             padding: 0px 10px;
             font-size: 18px;
+            font-family: sans-serif;
         }
 
         table
@@ -32,6 +34,17 @@
         td,th
         {
             padding: 20px;
+        }
+
+        #q4:hover + .question4
+        {
+            display: block;
+            background-color: teal;
+        }
+
+        .question4
+        {
+            display: none;
         }
 
         #gradients
@@ -132,15 +145,19 @@
         </tr>
     </table>
 
-        <h3>
-            Q4. Name a few CSS style components
+        <h3 id="q4">
+            Q4. Name a few CSS style components and hover me
         </h3>
 
-        <p>
-            Button , input ,label , textarea ,checkbox ,table , radio button ,list item ,paragraph ,heading , menu, navbar.
-            <button style="background-color: red;">hello</button>
-                
-        </p>
+        <div class="question4">
+            table , radio button ,list item ,paragraph ,heading , menu, navbar.
+            <button style="background-color: red;">hello this is button</button>
+            <input type="text"  id="" placeholder="this is the input" name="input1">
+            <label for="input1">this is lable</label>
+            <textarea name="" id="" cols="30" rows="10">hello this is textarea</textarea>
+            <input type="checkbox" name="" id="">
+            <input type="radio" name="" id="">
+        </div>
 
         <h3>
             Q5.  What do you understand by CSS opacity?
