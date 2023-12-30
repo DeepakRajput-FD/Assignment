@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<style>
+    input
+    {
+        padding: 10px;
+        margin: 20px;
+    }
+    .calculation
+    {
+        padding: 0px 30px;
+    }
+    button
+    {
+        padding: 10px 20px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="calculator">
+        
+        <div class="input">
+            <span id="spn1">
+            Enter 1st number
+            </span>
+                <input type="text" id="value1" placeholder="enter value">
+            
+            <span id="spn2">
+            Enter 2nd number
+            </span>
+                <input type="text" id="value2" placeholder="enter value">
+            
+        </div>
+
+        <div class="calculation">
+            <button onclick="add()">+</button>
+            <button onclick="subtract()">-</button>
+            <button onclick="Multiply()">*</button>
+            <button onclick="Division()">/</button>
+         
+              <div> Answer is: 
+                <span id="Answer">
+                </span>
+        </div>
+        
+        </div>
+    </div>
+
+    <script>
+
+        // let num1,num2;d
+
+        num1=document.getElementById("value1");
+        num2=document.getElementById("value2");
+        let total;
+        
+        function add()
+        {
+            // console.log(parseInt.value+parseInt.value);
+           total= parseInt(num1.value)+parseInt(num2.value);
+            document.getElementById('Answer').innerText=total;
+            console.log("ok");
+        }
+
+        function subtract()
+        {
+            total=(num1.value) - parseInt(num2.value);
+            document.getElementById('Answer').innerText=total;
+            console.log("this is subtreact");
+        }
+
+        function Multiply()
+        {
+            // console.log(parseInt.value+parseInt.value);
+            total= (num1.value) * parseInt(num2.value);
+            document.getElementById('Answer').innerText=total;
+            console.log("ok");
+        }
+
+        function Division()
+        {
+            total=(num1.value) / parseInt(num2.value);
+            document.getElementById('Answer').innerText=total;
+            console.log("this is subtreact");
+        }
+
+        // num3=num1.value+num2.value
+        // console.log(num1.value + num2.value);
+        // console.log(num3);
+
+    </script>
+</body>
+</html>

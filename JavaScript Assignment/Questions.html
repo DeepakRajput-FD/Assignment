@@ -53,7 +53,11 @@
 
       </h2>
       <p>
-
+        Negative infinity in JavaScript, represented by -Infinity or Number.NEGATIVE_INFINITY, is a special numeric value that indicates a value lower than any other representable number. It's the opposite of Infinity, which represents the highest representable number.
+        <br>
+        Negative infinity is always less than any other number (including negative zero).
+        <br>
+        It follows some specific rules in arithmetic operations.
       </p>
 
       <h2>
@@ -132,6 +136,100 @@
         In other words, if a and b are of different types, then a === b immediately returns false without an attempt to convert them.
     </p>
 
+    <h2>
+        How can the style/class of an element be changed? 
+    </h2>
+
+    <p>
+        The document.getElementById() method is used to return the element in the document with the “id” attribute and the “className” attribute can be used to change/append the class of the element.
+        <br>
+        1st way you can used to class and id used to style element.
+        <br>
+        2nd way you can used to classList used to style element.
+    </p>
+
+    <h2>
+        How to read and write a file using JavaScript? 
+    </h2>
+
+    <p>
+        Files can be read and written by using java script functions – fopen(),fread() and fwrite().
+        fopen function is used to open the file.
+        fread function is used to read the file.
+        fwrite function is used to write the selected file. 
+    </p>
+
+    <h2>
+        What are all the looping structures in JavaScript? 
+    </h2>
+
+    <p>
+        Looping structures in JavaScript
+        => for loop, while loop, do while loop, for in loop and for of loop and for each loop. 
+    </p>
+
+    <h2>
+        How can you convert the string of any base to an integer in JavaScript?
+    </h2>
+
+    <p>
+        There's a function called parseInt() in JavaScript, this is used for parsing a string as an argument and it returns an integer of the specified radix (basically the base of the numerical system) as output.
+    </p>
+
+    <h2>
+        What is the function of the delete operator? 
+    </h2>
+
+    <p>
+        The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically. basically it is used to release the unnecessary value of given by object's value.
+    </p>
+
+    <h2>
+        What are all the types of Pop up boxes available in JavaScript?
+    </h2>
+
+    <p>
+        In Javascript, popup boxes are used to display the message or notification to the user.
+
+        There are three types of pop-up boxes in JavaScript:
+        Alert Box,
+        Prompt Box,
+        Confirm Box.
+    </p>
+
+    <h2>
+        What is the use of Void (0)? 
+    </h2>
+
+    <p>
+        When a function is void, it means that the function returns nothing. This is similar to functions in JavaScript which return undefined.
+        void(0) = undefined. void 0 means undefined. it does not return any String value,integer value.
+    </p>
+
+    <h2>
+        How can a page be forced to load another page in JavaScript?
+    </h2>
+
+    <p>
+        window.location="https://www.youtube.com/";
+        <br>
+        <!-- window.location=<path  ><url>; -->
+        <br>
+        window.location is used to force to load another page in JavaScript.
+    </p>
+
+    <h2>
+        What are the disadvantages of using innerHTML in JavaScript?
+    </h2>
+
+    <p id="p">
+        (The use of innerHTML very slow): The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.
+        <br>
+        (Content is replaced everywhere): Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.
+        <br>
+        Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML, the whole tag is re-parsed.
+    </p>
+
       <script>
           // let a='hello';
           // console.log(isNaN(a));
@@ -143,6 +241,12 @@
           let div3=document.createAttribute("a");//it is attribute
           div3="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D";
           console.log(div3);
+
+          const res =void(1+1);
+            console.log(res);
+
+            // window.location="https://www.youtube.com/";
+
       </script>
     </body>
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper
+        {
+            width: 60%;
+            margin:0 auto;
+            font-size: 20px;
+        }
+        
+        .names,.inputes
+        {
+            list-style-type: none;
+        }
+
+        .inputes li ,.names li
+        {
+            padding: 10px 0px;
+        }
+
+        .names li
+        {
+            padding: 5px 0px;
+            list-style-type: decimal;
+        }
+
+        .main-wrapper
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        h2,h3
+        {
+            text-align: center;
+            padding: 20px 0px ;
+        }
+
+        button
+        {
+            padding: 10px;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .inputes li 
+        {
+            padding: 5px 0px;
+        }
+
+        input
+        {
+            padding: 5px ;
+        }
+
+        .wrapper2
+        {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            color: blue;
+        }
+        #spn2
+        {
+            padding-right: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        
+        <h2>
+            Marksheet of Information Technology
+        </h2>
+
+        <h3>
+            Enter Marks
+        </h3>
+
+        <div class="main-wrapper">
+       
+           <ul class="names">
+            <li>c language</li>
+            <li>c++ language</li>
+            <li>database</li>
+            <li>html</li>
+            <li>css</li>
+            <li>php</li>
+            <li>core java</li>
+           </ul>
+
+            <ul class="inputes">
+
+                <li><input type="text" id="num1" placeholder="Enter Value"></li>
+                <li><input type="text" id="num2" placeholder="Enter Value"></li>
+                <li><input type="text" id="num3" placeholder="Enter Value"></li>
+                <li><input type="text" id="num4" placeholder="Enter Value"></li>
+                <li><input type="text" id="num5" placeholder="Enter Value"></li>
+                <li><input type="text" id="num6" placeholder="Enter Value"></li>
+                <li><input type="text" id="num7" placeholder="Enter Value"></li>
+
+            </ul>
+
+        </div>
+
+        <button id="b1" onclick="result()">
+            Result
+        </button>
+
+        <div class="wrapper2">
+        <span id="spn1">
+            Total is:            
+        </span>
+
+        <span id="spn2">
+            Percentage is:
+        </span>
+        </div>
+    </div>
+
+    <script>
+     
+     function result()
+      {
+        let num1=document.getElementById('num1').value;
+        let num2=document.getElementById('num2').value;   
+        let num3=document.getElementById('num3').value;   
+        let num4=document.getElementById('num4').value;
+        let num5=document.getElementById('num5').value;   
+        let num6=document.getElementById('num6').value;    
+        let num7=document.getElementById('num7').value;  
+        
+        let total=parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4)+parseInt(num5)+parseInt(num6)+parseInt(num7);
+        // console.log(total);
+        document.getElementById('spn1').innerText="Total is: "+total;
+
+         total=total/7;
+        // console.log(total);
+        document.getElementById('spn2').innerText="Percentage is: "+total;
+
+        if (total>=100)
+         {
+            console.log("AAP bhagwan ho, you are legend, you are close to albert einstin");
+        }
+
+        else if(total>=90)
+        {
+            console.log("you are mind blowing and fantastic genius");
+        }
+
+        else if(total>=80)
+        {
+            console.log("You are Genius");
+        }
+        else if(total>=70)
+        {
+            console.log("you are good");
+        }
+        else if(total>=50)
+        {
+            console.log("Average");
+        }
+        else
+        {
+            console.log("next time try to your best");
+        }
+
+     }
+
+    </script>
+
+</body>
+</html>
