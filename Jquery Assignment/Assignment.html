@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        h2
+        {
+            padding: 10px 10px ;
+            color: green;
+        }
+        h3
+        {
+            padding: 10px 10px ;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+ <h2>What is jQuery? </h2>
+
+ <h3>jQuery is a fast, small, and feature-rich JavaScript library that makes things like HTML document traversal and manipulation, event handling, animation, and AJAX much simpler with an easy-to-use API that works across a multitude of browsers. It's often described as a "write less, do more" library, because it takes a lot of common tasks that require many lines of JavaScript code to accomplish and wraps them into methods that you can call with a single line of code.  This makes it much easier to develop interactive web applications.  </h3>
+
+    <h2>
+        How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?
+    </h2>
+
+    <h3>
+        1. Using the css() method:
+        <br>
+        Directly set CSS properties for selected elements:
+        <br>
+        $(selector).css({
+            property1: value1,
+            property2: value2,
+            // ...
+        });
+        
+        // Example:
+        $("p").css({
+            "color": "red",
+            "font-size": "20px"
+        });
+
+        <br>
+        <br>
+
+       2. Adding and removing classes:
+       <br>
+       addClass(className): Adds one or more classes to selected elements.
+       removeClass(className): Removes one or more classes from selected elements.
+       toggleClass(className): Toggles the presence of a class on selected elements (adds it if absent, removes it if present).
+
+             // Add a class:
+      $("p").addClass("highlight");
+      
+      // Remove a class:
+      $("p").removeClass("highlight");
+      
+      // Toggle a class:
+      $("button").click(function() {
+          $("p").toggleClass("hidden");
+      });
+
+      <br>
+      <br>
+      
+      3.jQuery animations:
+      <br>
+      jQuery offers various built-in effects for animations:
+      $(selector).hide(speed, callback); // Hide elements
+     $(selector).show(speed, callback); // Show elements
+     $(selector).toggle(speed, callback); // Toggle visibility
+     $(selector).fadeIn(speed, callback); // Fade elements in
+     $(selector).fadeOut(speed, callback); // Fade elements out
+     $(selector).fadeToggle(speed, callback); // Toggle fade
+     $(selector).slideDown(speed, callback); // Slide elements down
+     $(selector).slideUp(speed, callback); // Slide elements up
+     $(selector).slideToggle(speed, callback); // Toggle slide
+
+     <br>
+     <br>
+    </h3>
+
+    <h2>
+        How to create slider with animation?
+    </h2>
+
+</body>
+</html>
