@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #image-wrapper
+        {
+            width: 80%;
+            margin: 50px auto;
+            height: 600px;
+            /* border: 1px solid black; */
+            
+            position: relative;
+        }
+        img
+        {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        button
+        {
+            padding: 20px;
+            font-size: 20px;
+            /* top: 0; */
+            bottom: 300px;
+        }
+        #btn2
+        {
+            position: absolute;
+            left: 0;
+        }
+        #btn1
+        {
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-wrapper">
+        <img src="" alt="" id="img1">
+        <button onclick="function_right()" id="btn1">Right</button>
+        <button onclick="function_left()" id="btn2">Left</button>
+    </div>
+    
+
+    <script>
+
+        let arr=['image1.jpg','images2.webp','image3.avif','image4.webp'];
+        let count=0;
+        let image= document.getElementById('img1');
+        image.src='image1.jpg';
+
+        function function_right()
+         {        
+             if (count==4)
+             {
+                 count=0;
+                }
+            image.src=arr[count];
+            count++;
+         }
+
+         function function_left()
+          {
+              if (count==0)
+              {
+                  count=4;    
+                }   
+                count--;
+                image.src=arr[count];
+         }
+
+    </script>
+
+</body>
+</html>
