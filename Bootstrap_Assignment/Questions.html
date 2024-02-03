@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        dl
+        {
+            padding: 0px 20px;
+        }
+        table
+        {
+            border: 2px solid black;
+            margin: 20px 0px;
+        }
+        th
+        {
+            border: 1px solid black;
+            padding: 10px 0px;
+            background: teal;
+            color: white;
+        }
+        dt
+        {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <dl>
+        <dt>
+            What are the advantages of Bootstrap?
+        </dt>
+        <dd>
+        <br>            
+    Bootstrap is a popular front-end framework that offers a wide range of advantages for web development, making it a popular choice for both beginners and experienced developers alike. Here are some of the key benefits:
+        <br>
+    Faster development:Pre-built components: Bootstrap provides a large library of pre-built components like buttons, navigation bars, forms, and more. This saves you time and effort compared to coding everything from scratch.
+        <br>
+    Responsive design: Bootstrap is built for responsive design, ensuring your website looks good and functions well on all devices, from desktops to mobile phones. This saves you the time and effort of creating separate designs for different screen sizes.
+        <br>
+    Grid system: Bootstrap's grid system makes it easy to layout your website's content in a consistent and organized way. This can save you time and effort when making changes to your website's design.
+    <br>
+    Simple syntax: Bootstrap uses a simple and easy-to-understand syntax, making it easier to learn and use than other frameworks. This is especially beneficial for beginners.
+    <br>
+    Open source and free: Bootstrap is open-source and free to use, making it a cost-effective solution for web development.
+    </dd>
+
+    <br>
+    <dt>What is a Bootstrap Container, and how does it work?</dt>
+    <br>
+    <dd>
+        A Bootstrap Container is a fundamental building block in the Bootstrap framework, used to structure and manage content layout across different devices. It acts like a wrapper for your website's content, providing responsive behavior and a consistent visual framework.
+    <br>
+    <br>
+    .container: This class sets a fixed maximum width for the content at each responsive breakpoint (e.g., small, medium, large screens). It provides margin and padding to give your content breathing room.
+    <br>
+    .container-fluid: This class makes the container span the entire width of the viewport at all breakpoints. It's good for full-width layouts but has no margins or padding.
+    <br>
+    .container-{breakpoint}: These classes offer responsive control. For example, .container-sm is 100% width until the small breakpoint, then adapts to predefined max-widths at larger breakpoints.
+    </dd>
+
+    <br>
+    <dt>What are the default Bootstrap text settings?    </dt>
+    <br>
+    <dd>
+        It is depend on user's device  
+        but Global settings
+        Font family=> sans-serif fonts like Helvetica Neue, Arial, or Noto Sans.
+        <br>
+        Font size=> which is usually 16px
+        <br>
+        Line height=> typically around 1.4-1.5.
+        <br>
+        Link color=>  by default blue color
+    </dd>    
+    <br>
+    <br>
+    <dt>
+        What do you know about the Bootstrap Grid System?
+    </dt>
+    <br>
+    <dd>
+        The Bootstrap Grid System is a powerful and flexible layout tool that forms the backbone of responsive web design with Bootstrap.
+        <br>
+        Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.
+        <br>
+        In Bootstrap, Grid system allows up to 12 columns across the page and is built with flexbox
+        <br>
+        
+    </dd>
+    <br>
+        <dt>
+            What is the difference between Bootstrap 4 and Bootstrap 5
+        </dt>
+        <Table>
+            <tr>
+                <th>Points</th>
+                <th>Bootstrap4</th>
+                <th>Bootstrap5</th>
+            </tr>
+            <tr>
+                <th>Grid System	</th>
+                <th>It has 5 tier (xs, sm, md, lg, xl).	</th>
+                <th>It has 6 tier (xs, sm, md, lg, xl, xxl).</th>
+            </tr>
+            <tr>
+                <th>Color	</th>
+                <th>It has limited colors.</th>
+                <th>Extra colors added with the looks, A card improved color palette. there are various shades available to choose.</th>
+            </tr>
+
+            <tr>
+                <th>Jquery</th>
+                <th>Jquery	It has jquery and all related plugins.</th>
+                <th>Jquery is removed and switched to vanilla JS with some working plugins</th>
+            </tr>
+
+            <tr>
+                <th>Internet Explorer	</th>
+                <th>Bootstrap 4 supports both IE 10 and 11.</th>
+                <th>Bootstrap 5 does't supports IE 10 and 11 </th>
+            </tr>
+
+            <tr>
+                <th>Form Elements</th>
+                <th>Checkbox, radio buttons and input have different looks in different browsers </th>
+                <th>the form Elements in Bootstrap 5 will not change.</th>
+            </tr>
+            <tr>
+                <th>Icons</th>
+                <th>does not have svg icons, we have use to font awseome for for icons </th>
+                <th>
+                    Bootstrap5 have own svg icons
+                </th>
+            </tr>
+            <tr>
+                <th>Navbar</th>
+                <th>we have inline-block property and we will get white dropdown by default for dropdown-menu-dark-class</th>
+                <th>In Bootstrap5 remove inline-block property and we will get black dropdown as default for dropdown-menu-dark-class</th>
+            </tr>
+
+        </Table>
+
+        <dt>
+            What is a Button Group, and what is the class for a basic Button Group?
+        </dt>
+        
+        <dd>
+            Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups (without spaces) vertically or horizontally.
+            <br>
+            In button group class where each button has its own class of “btn”.
+            <br>
+           class name= btn-group 
+            <br>
+            <div class="btn-group gap-5 bg-info flex-wrap ">
+            <button type="button" class="btn btn-primary btn-group">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+            </div>
+        </dd>
+        
+        <dt>
+            How can you use Bootstrap to make thumbnails?
+        </dt>
+        <dd>
+            Basic Thumbnail =>
+            using
+            class =".img-thumbnail" insert in img tag 
+            <br>
+            <img src="..//CSS Assignment/images/Background_clip.jpg" class="img-thumbnail " alt="...">
+            </dd>
+            
+            <dt>
+                In Bootstrap 4, what is flexbox? 
+            </dt>
+
+            <dd>
+                In Bootstrap 4, Flexbox is a powerful layout tool that allows for flexible and responsive arrangement of elements within a container. and instead of floats, to handle the layout.
+                <br>
+                Container: The parent element that holds the flex items and applies flexbox properties.
+                <br>
+                Flex Items: The direct children of the container, which are arranged using flexbox.
+                <br>
+                Main Axis: The primary direction along which flex items are laid out (usually horizontal).
+                <br>
+                Cross Axis: The axis perpendicular to the main axis (usually vertical).
+                <br>
+                For Ex.
+                <br>
+                <div class="d-flex gap-2 flex-wrap" >
+                    <p>hello1</p>
+                    <p>hello2</p>
+                    <p>hello3</p>
+                    <p>hello4</p>
+                    <p>hello5</p>
+                    <p>hello6</p>
+                    <p>hello7</p>
+                    <p>hello8</p>
+                    <p>hello9</p>
+                    <p>hello10</p>
+                </div>
+            </dd>
+
+            <dt>
+                How can one create an alert in Bootstrap?
+            </dt>
+            <dd>
+                <h2 class="alert alert-primary"> using alert alert-primary class </h2>
+            </dd>
+
+            <dt>What is a bootstrap card and how would you create one?</dt>
+            <dd>
+                A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+                <br>
+                
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../CSS Assignment/images/Background_repeat.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </dd>
+</dl>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
