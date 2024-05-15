@@ -1,0 +1,65 @@
+(1) What is React Js? 
+React is the library of the javascript.
+With help we can create spa application and non-refereshable application.
+Spa (Single page application).
+React Js is worked on component based.
+
+(2) What is NPM in React Js?
+Node package Manager.
+It is provide environment.
+It is tool which is used to install package.
+And also use for execution.
+
+(3) What is Role of Node Js in react Js? 
+Environment of Js.	
+Using node we can install and execute and run js
+
+(4)What is CLI command In React Js?
+
+   for project creation (traditional method)
+    npx create-react-app <projectname> => to create react app
+   cd projectname => set the project name 
+   npm start => to start the react app
+   npx => used to execution 
+
+(New Method) Using Vite
+Npm create vite => using we can create react+vite application.
+And after set the project name. And set the package name.
+And set the language which language used to you build.
+And after set your language for ex. (Javascript+swc)
+npm run dev => using we can execute the project.
+
+(5)What is Components in React Js? 
+	Components are block of code which can we reuse.
+	or it is piece of code which can we reuse in other folder or file.
+
+(6) What is Header and Content Components in React Js?
+	Both are component where each and every component have block of code.
+And header component is stored navbar and heading tags.
+Content component is stored content of the website.
+
+(7)How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
+
+Steps are below :
+(1)Go to node.org
+(2)download Lts version (Long Term Support) and click the download.
+(3)Install Node Js on your system and set all next to all pages and checked all checkbox.
+ (4)check node js on you system using terminal write (node)
+(5)write  npm -v (to check version of node)
+
+
+(8)How to check version of React Js?
+node -v
+
+(9)How to change in components of React Js? 
+	Using usestate hook we can change in component.
+Hook is a special function and with hooks we can manipulation in component.
+And it is return array. Where the first is default value and the second is changing method with we can change the value of usestate.
+For ex. let [count,Setcount]=usestate(0);
+
+
+
+
+
+
+
