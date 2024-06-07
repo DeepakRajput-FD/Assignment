@@ -1,0 +1,49 @@
+Explain functional component with Hooks
+
+    functional component are block of code or piece of information which we can reuse
+
+    Hooks : hooks is a special type of function which is used to we can change many state of the component and manage life cycle of component 
+
+    there are some hooks are avalible in react js 
+
+    useState : use state is special type of function with help we can change the state of functioal component or change the value it return array in array the fast is variable and the the second is the state or a variable which is change the value of first variable 
+    for ex: let [name,setname]=useState('');
+
+    useEffect : useEffect is the most popular hooks in react which is used to fetch the data from the api or database and we Can control the sideEffect of function component
+    for ex : api fetching and when we perform some code specific code then render some event
+
+        for Ex: useEffect(callback,dependencies); 
+        (1) useEffect(callback)//without dependencies //it will invoke every time 
+        (2) useEffect(callback,[])//with blank dependencies //it will work only one time when component is launch
+        (3) useEffect(callback,[click]): with dependencies // it will work when we click some event.
+
+    useReference: useReference is special type of hooks which is used to focus any element or perform some validation on input.
+    it does rerender component. and control the input.
+    and it have one method to control the input useForward to take the data from their child component and pass the props value.  
+    there have some properties : focus, current 
+    for Ex:  const inputref= useRef(null); //inputref.current.focus||value;
+
+    useContext : it is the most popular function in react. basically is used to pass the data from one component to another component. and manage globally state.
+    in before useContext we use props to send data from one component to another component but when we want to send data to multiple component then we want to make nested component which is not good because unnecassary data are provided to another component.
+    and useContext have three method with help we can pass the data (1) create context which is placed on globally and (2) context provider which is provide the value to destination component and (3) useContext it take the value and pass the functioal component.
+    for Ex: export let mycontext1=createContext(); //create context
+        
+         <mycontext1.Provider value={{name,subject}}> //pass the value to component
+            <ComponentExample4/>
+        </mycontext1.Provider> 
+
+    let record1=useContext(mycontext1);//it is take the value and pass to record1 variable.
+
+    useNaviagtion: it is the hook which is maintain history tab and with help we can move one page to another page.
+    and it have two have two value for back use -1 and for forward use 1.
+     and it take the path to move that page.
+     for Ex: let Naviagtion=useNaviagtion(); //create Naviagtion
+            Naviagtion('/About'); // it is move About page
+    
+    
+
+
+
+
+
+
