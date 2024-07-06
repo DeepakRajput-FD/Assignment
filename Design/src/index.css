@@ -1,0 +1,6 @@
+body
+{
+  background-color: red;
+  background: url(/public/mountain.jpg) no-repeat center/cover;
+  height: 600px;
+}
